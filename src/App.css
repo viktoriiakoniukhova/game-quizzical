@@ -1,0 +1,333 @@
+                    /* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, ul, li,
+article,footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, footer, header, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+                    /* General elements style */
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+
+    position: relative;
+}
+
+select {
+    padding: 1em;
+    margin: 0.5em 0;
+
+    max-width: 300px;
+    text-overflow: ellipsis;
+
+    background: var(--color-bg);
+    border: 0.794239px solid var(--color-button);
+    border-radius: 7.94239px;
+
+    font-family: var(--font-family-inter);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: start;
+    color: var(--color-text);
+}
+
+button {
+    padding: 1em;
+    margin: 0.5em 0;
+
+    background: var(--color-button);
+    border-radius: 15px;
+    border: none;
+
+    font-family: var(--font-family-inter);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--color-bg);
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--color-text);
+}
+  
+.loader {
+    border: 10px solid var(--color-bg);
+    border-top: 10px solid var(--color-button);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+                    /* Background style */
+body {
+    background: var(--color-bg);
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+
+    background: var(--color-bg);
+}
+
+.App__blue-blob-container {
+    position: fixed;
+
+    left: -148.5px;
+    bottom: -117.5px;
+
+    opacity: 0.5;
+}
+
+.App__yellow-blob-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    opacity: 0.5;
+}
+                    /* Start page style */
+.StartPage {
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    height: 100vh;
+}
+
+.StartPage__heading {
+    display: flex;
+
+    font-family: var(--font-family-karla);
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 65px;
+    text-align: center;
+
+    color: var(--color-text);
+}
+
+.StartPage__description {
+    display: flex;
+    align-items: center;
+
+    font-family: var(--font-family-inter);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--color-text);
+}
+
+.StartPage__selections {
+    display: flex;
+    gap: 1em;
+}
+
+.StartPage__button {
+    display: flex;
+    align-items: flex-start;
+}
+
+                    /* Main page style */
+.Main__button {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0.5em 0;
+}
+
+.Main__btn-return {
+    display: flex;
+    align-self: center;
+
+    padding: 0.5em;
+}
+
+.Main__btn-return img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.Main__loader {
+    position: fixed;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+
+.Main__questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.Main__results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.5em 0;
+}
+
+.Main p {
+    padding: 1em;
+
+    font-family: var(--font-family-inter);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--color-text);
+}
+
+.Question {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em 0;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.Question__heading {
+    margin-bottom: 1em;
+
+    font-family: var(--font-family-karla);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+
+    color: var(--color-text);
+}
+
+.Question__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Question__content-list {
+    padding: 0;
+    list-style: none;
+}
+
+.Question__content-list > li {
+    position: relative;
+    display: inline-block;
+    margin: 0.5em;
+
+    min-width: 65.92px;
+    border: 0.794239px solid var(--color-button);
+    border-radius: 7.94239px;
+}
+
+.Question__content-list > li label {
+    display: block;
+    padding: 0.5em 1em;
+
+    font-family: var(--font-family-inter);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+
+    color: var(--color-text);
+
+    border-radius: 7.94239px;
+}
+
+.Question__content-list > li label:hover {
+    cursor: pointer;
+}
+
+.Question__content-list > li input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.Question__content-list > li:not(.correct):has(input:disabled) {
+    opacity: 0.5;
+}
+
+.Question__content-list > li:has(input:checked) {
+    border: none;
+
+    background: var(--color-input-checked);
+    border-radius: 7.94239px;
+}
+
+.Question__content-list > li.incorrect:has(input:checked) {
+    background: var(--color-incorrect);
+}
+
+.Question__content-list > li.correct:has(input:checked),
+.Question__content-list > li.correct {
+    border: none;
+
+    background: var(--color-correct);
+}
+
+                    /* Show/hide elements */
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+                    /* Media queries */
+@media screen and (max-width: 500px) {
+    .StartPage__selections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    select {
+        min-width: 300px;
+    }
+}

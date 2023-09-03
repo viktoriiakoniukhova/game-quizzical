@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --font-family-karla: 'Karla', sans-serif;
+    --font-family-inter: 'Inter', sans-serif;
+    
+    --color-bg: #F5F7FB;
+    --color-text: #293264;
+    --color-button: #4D5B9E;
+    --color-border: #DBDEF0;
+    --color-input-checked: #D6DBF5;
+    --color-correct: #94D7A2;
+    --color-incorrect: #F8BCBC;
+  }
